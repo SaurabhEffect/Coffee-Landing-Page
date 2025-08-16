@@ -100,6 +100,9 @@ li a:hover{
     transform: translateY(60px);
 }
 
+
+/* Our-Story Ends */
+
 #our-story{
     height: 100vh;
     margin-top: 15%;
@@ -125,5 +128,27 @@ li a:hover{
 }
 
 .title{
-      
+      font-family: "Playfair Display", serif;
+      font-size: 4rem;
+      color: #fff;
+      transform: translateX(-100px);
+
 }
+
+.line{
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    transform: translateX(-120px);
+}
+
+
+.section-content p{
+    max-width: 500px;
+    color: #fff;
+    font-family: sans-serif;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+/* Our-Story Ends */
