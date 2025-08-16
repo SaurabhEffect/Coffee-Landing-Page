@@ -45,7 +45,6 @@ li a{
     color: #fff;
     text-decoration: none;
     margin-left: 40px;
-    padding-bottom: 10px;
 }
 
 li a:hover{
@@ -152,3 +151,161 @@ li a:hover{
 }
 
 /* Our-Story Ends */
+
+
+/* Coffee starts */
+
+.coffee-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+
+}
+
+.content-section p{
+    max-width: 500px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    color: #fff;
+
+}
+
+.img-2{
+    width: 400px;
+    height: 400px;
+
+}
+
+.img-container{
+    width: 500px;
+    height: 400px;
+}
+
+.title-two{
+    font-size: 3rem;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+}
+/* Coffee ends */
+
+.products{
+    margin-top: 5rem;
+}
+
+.title-three{
+    font-size: 4rem;
+    margin-left: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 20px;
+    align-items: center;
+
+}
+
+.card{
+    border: 2px solid var(--main-color);
+    padding:0 20px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    color: 20px;
+    position: relative;
+    margin-bottom: 4rem;
+
+}
+.card-img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+}
+
+.img-one{
+    background: url(Assests/1.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.img-two{
+    background: url(Assests/2.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.img-three{
+    background: url(Assests/3.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.card-title{
+    color: white;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+
+.card .items{
+    color: white;
+    margin: 20px 0;
+    font-family: sans-serif;
+
+}
+
+/* Products End */
+
+footer{
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 33%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif; 
+}
+
+footer .container{
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+
+}
+
+footer .heading-info{
+    margin-bottom: 20px;
+}
+
+footer p{
+    line-height: 25px;
+
+}
+
+span{
+    color: var(--main-color);
+
+}
+
+.para{
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    
+}
