@@ -1,116 +1,256 @@
 <!DOCTYPE html>
-<html>
 <head>
-    <title>Coffee Project</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Project</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<html lang="en">
+  <body>
     <nav>
-        <h1 class="logo">Logo</h1>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
+      <h1 class="logo">Logo</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#our-story">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </nav>
-    
-    <header class="header">
-        <h1 class="main-headings">START YOUR DAY</h1>
-        <h1 class="primary-headings">WITH OUR COFFEE</h1>
+
+    <header class="header" id="home">
+      <div class="header-content">
+        <h1 class="main-headings"><span id="typewriter-line1"></span></h1>
+        <h1 class="primary-headings"><span id="typewriter-line2"></span></h1>
         <button class="main-btn">Shop Now</button>
-
+      </div>
     </header>
-    <section id="our-story">
-        <div class="img-selector">
-            <div class="img"></div>
+
+    <section id="our-story" class="reveal">
+      <div class="img-selector">
+        <div class="img"></div>
+      </div>
+      <div class="section-content">
+        <div class="title-style">
+          <span class="line"></span>
+          <h1 class="title">Our Story</h1>
         </div>
-        <div class="section-content">
-            <div class="title-style">
-                <span class="line"></span>
-                <h1 class="title">Our Story</h1>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut libero ut corporis quas inventore, reprehenderit deserunt nam sapiente molestiae enim, doloribus facere qui. Officia amet hic at deserunt asperiores, soluta tenetur, cupiditate pariatur repellendus ipsam necessitatibus iure doloribus nulla ipsa nobis reprehenderit! Natus, totam adipisci? Deserunt dolor corrupti eum tenetur!</p>
-            <button>Learn more</button>
-        </div>
+        <p>
+          Our story began with a simple idea: to create a space where people can
+          pause, connect, and enjoy a truly exceptional cup of coffee. We source
+          our beans directly from the world's finest farms and brew every cup
+          with passion. For us, coffee isn't just a drink; it's an art form and
+          a way to brighten your day.
+        </p>
+        <button>Learn more</button>
+      </div>
     </section>
 
-    <section class="coffee-container">
-        <div class="content-section">
-            <div class="title-style">
-                <h1 class="title-two">
-                    Perfect Place<br />
-                    To Enjoy Your<br />
-                    Coffee
-                </h1>
-            </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, eum et est, ea quidem debitis distinctio natus iure eveniet nobis enim eos nesciunt, a eligendi.</p>
-            <Button style="margin-top: 20px">Learn More</Button>
+    <section class="coffee-container reveal">
+      <div class="content-section">
+        <div class="title-style">
+          <h1 class="title-two">
+            Perfect Place<br />
+            To Enjoy Your<br />
+            Coffee
+          </h1>
         </div>
+        <p>
+          Our cafe provides a warm and comfortable atmosphere. Whether you're
+          catching up with friends, working on your own, or simply taking a
+          moment for yourself, our space is designed for you. Come in, sit back,
+          and savor the aroma of freshly brewed coffee.
+        </p>
+        <button style="margin-top: 20px">Learn More</button>
+      </div>
 
-        <section class="img-container">
-            <img src="Assests/2.png" class="img-2">
-
-        </section>
-
-        <!--Product-->
-        <section class="products">
-            <h1 class="title title-three">Products</h1>
-            <section class="cards">
-                <div class="card">
-                    <div class="card-img img-one"></div>
-                    <div class="card-title">
-                        <h1>Mocha</h1>
-                    </div>
-                    <div class="items">
-                        <p>Espresso</p>
-                        <p>Chocolate</p>
-                        <p>Steamed Milk</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img img-two"></div>
-                    <div class="card-title">
-                        <h1>Mocha</h1>
-                    </div>
-                    <div class="items">
-                        <p>Espresso</p>
-                        <p>Chocolate</p>
-                        <p>Steamed Milk</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img img-three"></div>
-                    <div class="card-title">
-                        <h1>Mocha</h1>
-                    </div>
-                    <div class="items">
-                        <p>Espresso</p>
-                        <p>Chocolate</p>
-                        <p>Steamed Milk</p>
-                    </div>
-                </div>
-            </section>
-        </section>
+      <section class="img-container">
+        <img src="Assests/2.png" alt="Coffee Latte Art" class="img-2" />
+      </section>
     </section>
 
-    <!--Footer Start-->
-    <footer>
-        <div class="container">
+    <section class="products reveal" id="menu">
+      <h1 class="title title-three">Products</h1>
+      <section class="cards">
+        <div
+          class="card"
+          data-title="Mocha"
+          data-img-src="Assests/1.png"
+          data-items="Espresso,Chocolate,Steamed Milk"
+        >
+          <div class="card-img img-one"></div>
+          <div class="card-content">
+            <div class="card-title">
+              <h1>Mocha</h1>
+            </div>
+            <p class="card-description">
+              Rich espresso with dark chocolate & steamed milk.
+            </p>
+            <ul class="items">
+              <li>Espresso</li>
+              <li>Chocolate</li>
+              <li>Steamed Milk</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price">$4.50</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          data-title="Latte"
+          data-img-src="Assests/2.png"
+          data-items="Espresso,Steamed Milk,Light Foam"
+        >
+          <div class="card-img img-two"></div>
+          <div class="card-content">
+            <div class="card-title">
+              <h1>Latte</h1>
+            </div>
+            <p class="card-description">
+              Smooth espresso with steamed milk and a light foam top.
+            </p>
+            <ul class="items">
+              <li>Espresso</li>
+              <li>Steamed Milk</li>
+              <li>Light Foam</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price">$4.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          data-title="Espresso"
+          data-img-src="Assests/3.png"
+          data-items="Ground Coffee,Hot Water"
+        >
+          <div class="card-img img-three"></div>
+          <div class="card-content">
+            <div class="card-title">
+              <h1>Espresso</h1>
+            </div>
+            <p class="card-description">
+              A strong, concentrated shot of pure coffee flavor.
+            </p>
+            <ul class="items">
+              <li>Ground Coffee</li>
+              <li>Hot Water</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price">$3.00</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer id="contact">
+      <div class="footer-main-content">
+        <div class="footer-left">
+          <div class="container">
             <h1 class="heading-info">About <span>Us</span></h1>
-            <p>Lorem ipsum dolor sit amet</p>
-        </div>
-        <div class="container">
-            <h1 class="heading-info">Contact <span>Us</span></h1>
-            <p>Lorem ipsum dolor sit amet</p>
-        </div>
-        <div class="container">
+            <p>
+              A passion-driven coffee house dedicated to quality, community, and
+              exceptional taste.
+            </p>
+          </div>
+          <div class="container">
             <h1 class="heading-info">Opening <span>Hours</span></h1>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>
+              Mon - Fri: 8:00 AM - 9:00 PM<br />Sat - Sun: 9:00 AM - 11:00 PM
+            </p>
+          </div>
+          <div class="container">
+            <h1 class="heading-info">Follow <span>Us</span></h1>
+            <div class="social-links">
+              <a href="#" class="social-link">Facebook</a>
+              <a href="#" class="social-link">Instagram</a>
+              <a href="#" class="social-link">Twitter</a>
+            </div>
+          </div>
         </div>
-    
+        <div class="footer-right">
+          <div class="container">
+            <h1 class="heading-info">Contact <span>Us</span></h1>
+            <form id="contact-form">
+              <input
+                type="text"
+                id="form-name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                id="form-email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                id="form-message"
+                rows="5"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit">Send Message</button>
+              <p id="form-status"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright @2025 SaurabhEffect</p>
+      </div>
     </footer>
-    <!--Footer End-->
-    <p class="para">Copyright @2025 SaurabhEffect</p>
-</body>
+
+    <div id="progressBtn" title="Go to top">
+      <svg
+        class="progress-circle"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          class="progress-track"
+          d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96"
+        />
+        <path
+          class="progress-value"
+          d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96"
+        />
+      </svg>
+      <span class="progress-arrow">&uarr;</span>
+    </div>
+
+    <div id="modal-container">
+      <div id="modal">
+        <span id="modal-close">&times;</span>
+        <div id="modal-img"></div>
+        <h1 id="modal-title">Product Title</h1>
+        <div id="modal-items">
+          <p>• Ingredient 1</p>
+          <p>• Ingredient 2</p>
+          <p>• Ingredient 3</p>
+        </div>
+        <div class="modal-options">
+          <label for="size">Select Size:</label>
+          <select id="size" name="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <button class="modal-btn">Add to Order (Demo)</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
